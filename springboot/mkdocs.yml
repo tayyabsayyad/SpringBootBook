@@ -1,0 +1,76 @@
+site_name: Kick Start with Spring Boot
+site_description: A community-driven, open-source guide to Spring Boot.
+site_author: Open Source Contributors
+repo_url: https://github.com/your-username/mybook
+repo_name: GitHub
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    # Dark mode as default
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  font:
+    text: Roboto
+    code: Fira Code
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+
+nav:
+  - Home: index.md
+  - "Section 1: Spring Boot Fundamentals":
+      - "Intro to Spring": module4-spring-boot-fundamentals/chapter1-intro-spring.md
+      - "Intro to Spring Boot": module4-spring-boot-fundamentals/chapter2-intro-spring-boot.md
+      - "Building REST APIs": module4-spring-boot-fundamentals/chapter3-rest-api-basics.md
+      - "Data Persistence (JPA)": module4-spring-boot-fundamentals/chapter4-data-jpa.md
+      - "Configuration": module4-spring-boot-fundamentals/chapter5-configuration.md
+      - "Self-Learning": module4-spring-boot-fundamentals/self-learning.md
+
+  - "Section 2: RESTful API Development":
+      - "Intro to REST": module5-restful-api-development/chapter6-rest-intro.md
+      - "HTTP Basics": module5-restful-api-development/chapter7-http-basics.md
+      - "REST Design": module5-restful-api-development/chapter8-rest-design.md
+      - "REST API with Spring Boot": module5-restful-api-development/chapter9-rest-api-springboot.md
+      - "Request & Response Handling": module5-restful-api-development/chapter10-request-response.md
+      - "Self-Learning": module5-restful-api-development/self-learning.md
+
+  - "Section 3: Spring MVC & Full Stack":
+      - "MVC Intro": module6-spring-mvc-fullstack/chapter11-mvc-intro.md
+      - "MVC Fundamentals": module6-spring-mvc-fullstack/chapter12-mvc-fundamentals.md
+      - "Form Handling & Validation": module6-spring-mvc-fullstack/chapter13-form-validation.md
+      - "Frontend Integration": module6-spring-mvc-fullstack/chapter14-frontend-integration.md
+      - "Self-Learning": module6-spring-mvc-fullstack/self-learning.md
+
+  - "Contributing": CONTRIBUTING.md
+  - "License": license.md
